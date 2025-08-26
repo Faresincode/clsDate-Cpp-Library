@@ -1,84 +1,75 @@
-# clsDate-Cpp-Library
-clsDate.h is a C++ date library class that makes it easy to create, validate, compare, and format dates. It supports date arithmetic (add/subtract days, months, years), leap year checks, business day/weekend logic, and even printing full calendars.
+# 📅 clsDate-Cpp-Library
 
-# clsDate-Cpp-Library
+A lightweight and powerful **C++ date library** for creating, validating, comparing, formatting, and manipulating dates with ease.
 
-A powerful and easy-to-use C++ library for handling dates with rich functionality.
+------------------------------------------------------------
+## ✨ Features Overview
 
-## 🚀 Features
-- **Date Creation & Initialization**
-  - From system time (current date)
-  - From string (e.g. "26/08/2025")
-  - From day order in year
-  - From day/month/year directly
-- **Validation**
-  - Check if a date is valid
-  - Leap year detection
-- **Comparison**
-  - Check if two dates are equal, before, or after
-  - Enum-based comparison (Before, Equal, After)
-- **Date Arithmetic**
-  - Increase/Decrease by days, weeks, months, years
-  - Handle decades, centuries, and millennia
-  - Add/subtract X days, months, years easily
-- **Utilities**
-  - Day of week calculation
-  - Detect weekends, weekdays, and business days
-  - Check start/end of week, month, or year
-  - Calculate difference in days between two dates
-  - Calculate vacation days excluding weekends
-- **Formatting & Conversion**
-  - Convert date to string in different formats
-  - Parse string to date
-  - Short names for days and months
-- **Calendars**
-  - Print month calendar to console
-  - Print full year calendar
-- **Misc**
-  - Support for replacing words in formatted date strings
-  - Flexible static and instance methods
+| Category        | Features                                                                 |
+|-----------------|--------------------------------------------------------------------------|
+| **Creation**    | - From system time (today) <br> - From day/month/year <br> - From string <br> - From day order in year |
+| **Validation**  | - Valid date check <br> - Leap year detection                            |
+| **Comparison**  | - Equal, before, after <br> - Enum-based comparison (Before, Equal, After) |
+| **Date Math**   | - Add/Subtract days, weeks, months, years <br> - Support for decades, centuries, millennia |
+| **Utilities**   | - Day of week calculation <br> - Weekend & business day detection <br> - Start/end of week, month, year <br> - Days difference between two dates <br> - Calculate vacation days (skip weekends) |
+| **Formatting**  | - Date → string <br> - String → date <br> - Custom formats (dd/mm/yyyy etc.) <br> - Short names for days & months |
+| **Calendars**   | - Print month calendar <br> - Print year calendar                        |
 
-## 📂 Project Structure
-```
-clsDate-Cpp-Library/
-│── clsDate.h   # Main date library class
-│── README.md   # Project documentation
-│── main.cpp    # Example usage (optional)
+------------------------------------------------------------
+## 🚀 Quick Start
+
+Clone the repo:
+```bash
+git clone https://github.com/<your-username>/clsDate-Cpp-Library.git
+cd clsDate-Cpp-Library
 ```
 
-## 📝 Example Usage
+Include the header in your project:
+```cpp
+#include "clsDate.h"
+```
+
+------------------------------------------------------------
+## 📝 Example
 ```cpp
 #include "clsDate.h"
 #include <iostream>
 using namespace std;
 
 int main() {
-    clsDate today; // Current system date
+    clsDate today;             // Current system date
     clsDate custom(26, 8, 2025);
 
-    cout << "Today: " << today.DateToString(today) << endl;
-    cout << "Custom: " << custom.DateToString(custom) << endl;
+    cout << "Today: "   << today.DateToString(today)   << endl;
+    cout << "Custom: "  << custom.DateToString(custom) << endl;
 
     custom.IncreaseDateByOneMonth();
-    cout << "After one month: " << custom.DateToString(custom) << endl;
+    cout << "After +1 month: " << custom.DateToString(custom) << endl;
 
-    if (today.IsWeekEnd()) 
+    if (today.IsWeekEnd())
         cout << "Today is weekend!" << endl;
-    else 
+    else
         cout << "Today is a business day." << endl;
 
     custom.PrintMonthCalendar();
-    custom.PrintYearCalendar();
-
     return 0;
 }
 ```
 
+------------------------------------------------------------
+## 📂 Project Structure
+```
+clsDate-Cpp-Library/
+│── clsDate.h   # Main library header
+│── README.md   # Project documentation
+│── main.cpp    # Example usage
+```
+
+------------------------------------------------------------
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome!  
-Feel free to fork this repo and submit pull requests.
+Pull requests are welcome.  
+For major changes, please open an issue first to discuss what you’d like to change.
 
+------------------------------------------------------------
 ## 📜 License
-This project is licensed under the MIT License.
-
-
+Licensed under the MIT License.
