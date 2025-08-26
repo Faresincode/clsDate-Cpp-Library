@@ -3,31 +3,18 @@
 A lightweight and powerful **C++ date library** for creating, validating, comparing, formatting, and manipulating dates with ease.
 
 ------------------------------------------------------------
-## ✨ Features Overview
+## ✨ Features
 
-| Category        | Features                                                                 |
-|-----------------|--------------------------------------------------------------------------|
-| **Creation**    | - From system time (today) <br> - From day/month/year <br> - From string <br> - From day order in year |
-| **Validation**  | - Valid date check <br> - Leap year detection                            |
-| **Comparison**  | - Equal, before, after <br> - Enum-based comparison (Before, Equal, After) |
-| **Date Math**   | - Add/Subtract days, weeks, months, years <br> - Support for decades, centuries, millennia |
-| **Utilities**   | - Day of week calculation <br> - Weekend & business day detection <br> - Start/end of week, month, year <br> - Days difference between two dates <br> - Calculate vacation days (skip weekends) |
-| **Formatting**  | - Date → string <br> - String → date <br> - Custom formats (dd/mm/yyyy etc.) <br> - Short names for days & months |
-| **Calendars**   | - Print month calendar <br> - Print year calendar                        |
+| Category        | What You Can Do |
+|-----------------|-----------------|
+| **Create Dates** | From system time (today), from `day/month/year`, from string (e.g. "26/08/2025"), or from day-order in year |
+| **Validation**   | Check if a date is valid, detect leap years |
+| **Comparison**   | Compare two dates (before, equal, after) |
+| **Date Math**    | Add or subtract days, weeks, months, years, decades, centuries, millennia |
+| **Utilities**    | Day of week, weekend & business day checks, start/end of week/month/year, days difference, vacation days |
+| **Formatting**   | Convert date ↔ string, use custom formats, short names for months/days |
+| **Calendars**    | Print month or year calendars in the console |
 
-------------------------------------------------------------
-## 🚀 Quick Start
-
-Clone the repo:
-```bash
-git clone https://github.com/<your-username>/clsDate-Cpp-Library.git
-cd clsDate-Cpp-Library
-```
-
-Include the header in your project:
-```cpp
-#include "clsDate.h"
-```
 
 ------------------------------------------------------------
 ## 📝 Example
