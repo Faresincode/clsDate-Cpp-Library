@@ -1,4 +1,4 @@
-# 📅 clsDate-Cpp-Library
+# 📅 Cpp Date Library
 
 A lightweight and powerful **C++ date library** for creating, validating, comparing, formatting, and manipulating dates with ease.
 
